@@ -1,5 +1,6 @@
 import streamlit as st
 import re
+# placing packages
 from langchain_groq import ChatGroq
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
