@@ -4,3 +4,4 @@ langchain_groq
 langchain
 langchain-community
 sentence-transformers
+chromadb
