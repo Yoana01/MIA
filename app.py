@@ -10,10 +10,6 @@ from idea_validator import show_idea_validator
 
 # THIS MUST BE FIRST
 st.set_page_config(page_title="Innovation Portal", page_icon="💡", layout="wide")
-st.title("Home Page")
-st.markdown("If you want to validate your idea, click on the Idea Validator")
-st.markdown("If you want get more information about funding or finance, go to ASK MIA")
-st.markdown("If want to check all your ideas or settings, go to the according tabs")
 st.markdown("""
     <style>
         .sidebar .sidebar-content {
@@ -71,6 +67,10 @@ with st.sidebar:
             },
         }
     )
+    st.title("Home Page")
+st.markdown("If you want to validate your idea, click on the Idea Validator")
+st.markdown("If you want get more information about funding or finance, go to ASK MIA")
+st.markdown("If want to check all your ideas or settings, go to the according tabs")
 
 # Main content area
 if selected == "Settings":
