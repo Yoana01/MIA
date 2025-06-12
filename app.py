@@ -8,7 +8,6 @@ from myidea import show_my_ideas
 from ask_mia import show_ask_mia
 from idea_validator import show_idea_validator
 
-# THIS MUST BE FIRST
 st.set_page_config(page_title="Innovation Portal", page_icon="💡", layout="wide")
 st.markdown("""
     <style>
@@ -67,10 +66,7 @@ with st.sidebar:
             },
         }
     )
-    st.title("Home Page")
-st.markdown("If you want to validate your idea, click on the Idea Validator")
-st.markdown("If you want get more information about funding or finance, go to ASK MIA")
-st.markdown("If want to check all your ideas or settings, go to the according tabs")
+
 
 # Main content area
 if selected == "Settings":
@@ -81,4 +77,9 @@ elif selected == "Ask MIA":
     show_ask_mia()
 elif selected == "Idea Validation":
     show_idea_validator()
+elif selected == "Home":
+    st.title("Home Page")
+    st.markdown("If you want to validate your idea, click on the Idea Validator")
+    st.markdown("If you want get more information about funding or finance, go to ASK MIA")
+    st.markdown("If want to check all your ideas or settings, go to the according tabs")
 
