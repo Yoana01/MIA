@@ -45,7 +45,7 @@ st.markdown("""
 # Sidebar layout
 with st.sidebar:
     st.markdown('<div class="sidebar-container">', unsafe_allow_html=True)
-    st.image("D:/Downloads/Data Science/Block D/Implementation/Streamlit/shape.jpg", use_container_width=False, width=120)
+    st.image("/workspaces/MIA/shape.jpg", use_container_width=False, width=120)
     st.markdown('<div class="profile-name">Anna van Drake</div>', unsafe_allow_html=True)
     st.markdown('<div class="profile-title">CEO WedoIT</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
