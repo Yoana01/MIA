@@ -1,7 +1,6 @@
 import streamlit as st
 
 def show_my_ideas():
-    st.title("Settings")
 
     st.markdown("""
         <style>
