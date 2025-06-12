@@ -4,5 +4,5 @@ langchain_groq==0.3.2
 langchain==0.3.25
 langchain-community==0.3.25
 sentence-transformers==4.1.0
-faiss-cpu==1.7.4
+faiss-cpu
 protobuf==3.20.3
