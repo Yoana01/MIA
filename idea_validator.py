@@ -4,7 +4,7 @@ import re
 from langchain_groq import ChatGroq
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import faiss
+from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 
 
@@ -42,7 +42,7 @@ def show_idea_validator():
         texts = splitter.create_documents(documents)
 
         embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-        db = faiss.from_documents(texts, embeddings)
+        db = FAISS.from_documents(texts, embeddings)
         retriever = db.as_retriever()
 
         llm = ChatGroq(
